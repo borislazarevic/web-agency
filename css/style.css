@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;700&display=swap");
+/*******************
+Variables
+*******************/
+/* rgb(29, 82, 124) */
+/* rgb(69, 154, 211) */
+/* rgb(253, 127, 69) */
+/*******************
+Basic Styles
+*******************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: lightgray;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
