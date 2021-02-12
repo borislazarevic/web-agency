@@ -1,0 +1,18 @@
+// Button mixin
+
+@mixin btn {
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border: 1px solid $darkblue;
+  color: $darkblue;
+  background: $lightgray;
+  transition: $transition;
+  cursor: pointer;
+  &:hover {
+    color: $lightgray;
+    background: $darkblue;
+  }
+}

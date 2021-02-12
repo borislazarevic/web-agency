@@ -177,4 +177,75 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/*******************
+Header
+*******************/
+header {
+  height: 92vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content-group {
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+  .header-content-group {
+    max-width: 70%;
+  }
+}
+
+.header-content-group h1 {
+  line-height: 1.25;
+}
+@media screen and (min-width: 768px) {
+  .header-content-group h1 {
+    font-size: 3rem;
+  }
+}
+
+.header-content-group span {
+  font-style: italic;
+}
+
+.header-content-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  padding: 15px;
+}
+@media screen and (min-width: 768px) {
+  .header-content-paragraph {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.header-content-paragraph :nth-child(1) {
+  padding-bottom: 20px;
+}
+
+.header-content-group button {
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border: 1px solid #1d527c;
+  color: #1d527c;
+  background: lightgray;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+.header-content-group button:hover {
+  color: lightgray;
+  background: #1d527c;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+// Img Mixin
+
+@mixin background_img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

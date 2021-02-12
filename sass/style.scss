@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;700&display=swap");
 
-@import "breakpoints-mixin.scss";
+@import "./mixins/breakpoints-mixin.scss";
+@import "./mixins/img-mixin.scss";
+@import "./mixins/flex-mixin.scss";
+@import "./mixins/btn-mixin.scss";
 /*******************
 Variables
 *******************/
@@ -169,4 +172,53 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*******************
+Header
+*******************/
+header {
+  height: 92vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/header.jpg");
+  @include background_img;
+  @include flex_center;
+}
+
+.header-content-group {
+  padding: 20px;
+  text-align: center;
+  @include breakpoint(iPad) {
+    max-width: 70%;
+  }
+}
+
+.header-content-group h1 {
+  line-height: 1.25;
+  @include breakpoint(tablet) {
+    font-size: 3rem;
+  }
+}
+
+.header-content-group span {
+  font-style: italic;
+}
+
+.header-content-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  padding: 15px;
+  @include breakpoint(tablet) {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+.header-content-paragraph :nth-child(1) {
+  padding-bottom: 20px;
+}
+
+.header-content-group button {
+  @include btn;
 }
