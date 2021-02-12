@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "breakpoints-mixin.scss"
+    ],
+    "names": [],
+    "file": "breakpoints-mixin.css"
+}
