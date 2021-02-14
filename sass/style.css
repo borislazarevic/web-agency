@@ -43,8 +43,41 @@ li {
 }
 
 .container {
-  max-width: 85%;
+  width: 85%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 75%;
+  }
+}
+
+.section-heading-title {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 1025px) {
+  .section-heading-title {
+    font-size: 2.1rem;
+  }
+}
+
+.section-heading-title::after {
+  background-color: #459ad3;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100px;
+  margin: 10px auto 20px auto;
+}
+
+@media screen and (min-width: 1025px) {
+  .section-heading-title::after {
+    width: 120px;
+    margin: 10px auto 50px auto;
+  }
 }
 
 /*******************
@@ -284,21 +317,47 @@ header {
   }
 }
 
+@media screen and (min-width: 1025px) {
+  .header-content-group h1 {
+    font-size: 4rem;
+    line-height: 0.9;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .header-content-group h1 {
+    font-size: 5rem;
+  }
+}
+
 .header-content-group span {
   font-style: italic;
 }
 
 .header-content-paragraph {
-  font-size: 1.1rem;
   line-height: 1.4;
   padding: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .header-content-paragraph {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     text-align: center;
-    padding: 20px 0;
+    padding: 30px 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .header-content-paragraph {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    padding: 50px 0;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .header-content-paragraph {
+    font-size: 1.5rem;
   }
 }
 
@@ -325,6 +384,12 @@ header {
   background: #1d527c;
 }
 
+@media screen and (min-width: 1025px) {
+  .header-content-group button {
+    font-size: 1.3rem;
+  }
+}
+
 /*******************
 About Us
 *******************/
@@ -332,34 +397,8 @@ About Us
   padding: 40px 0;
 }
 
-.section-heading-title {
-  text-align: center;
-  font-size: 1.4rem;
-}
-
-@media screen and (min-width: 1025px) {
-  .section-heading-title {
-    font-size: 1.8rem;
-  }
-}
-
 .about-us .section-heading-title h2 {
   color: #1d527c;
-}
-
-.section-heading-title::after {
-  background-color: #459ad3;
-  content: "";
-  display: block;
-  height: 2px;
-  width: 100px;
-  margin: 15px auto;
-}
-
-@media screen and (min-width: 1025px) {
-  .section-heading-title::after {
-    width: 120px;
-  }
 }
 
 .about-us-wrapper p {
@@ -416,5 +455,103 @@ About Us
             align-items: center;
     margin-top: 50px;
   }
+}
+
+/*******************
+Services
+*******************/
+.services {
+  background: #1d527c;
+  padding: 40px 0;
+}
+
+.services .section-heading-title {
+  color: #fff;
+}
+
+.services .section-heading-title::after {
+  background: lightgray;
+}
+
+.services-wrapper-text p {
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .services-wrapper-text p {
+    line-height: 1.4;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .services-wrapper-text p {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .services-wrapper-text p {
+    font-size: 1.5rem;
+  }
+}
+
+.services-wrapper-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.services-wrapper-icons a {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .services-wrapper-icons a {
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+  }
+}
+
+.services-wrapper-icons i {
+  font-size: 5rem;
+  padding: 30px 20px;
+  -webkit-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .services-wrapper-icons i {
+    font-size: 5.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .services-wrapper-icons i {
+    font-size: 6.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .services-wrapper-icons i {
+    font-size: 8rem;
+    padding: 60px 40px;
+  }
+}
+
+.services-wrapper-icons i:hover {
+  color: lightgray;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 /*# sourceMappingURL=style.css.map */
