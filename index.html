@@ -18,10 +18,10 @@
     <nav>
       <div class="logo"><a href="#">webex</a></div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog Post</a></li>
+        <li><a href="#footer">Contact</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -50,7 +50,7 @@
     </header>
 
     <!---------- About Us -------------->
-    <section class="about-us container">
+    <section id="about-us" class="container">
       <div class="section-heading-title">
         <h2>About us</h2>
       </div>
@@ -65,7 +65,7 @@
     </section>
 
     <!---------- Services -------------->
-    <section class="services">
+    <section id="services">
       <div class="container">
         <div class="section-heading-title">
           <h2>Services</h2>
@@ -98,10 +98,6 @@
             </p>
           </div>
           <div class="services-wrapper-icons">
-            <a href="#"><i class="fab fa-html5"></i></a>
-            <a href="#"><i class="fab fa-css3"></i></a>
-            <a href="#"><i class="fab fa-js-square"></i></a>
-            <a href="#"><i class="fab fa-react"></i></a>
             <a
               href="https://www.linkedin.com/in/boris-lazarevic-708454206/"
               target="_blank"
@@ -110,13 +106,17 @@
             <a href="https://github.com/borislazarevic" target="_blank"
               ><i class="fab fa-github-square"></i
             ></a>
+            <a href="#"><i class="fab fa-html5"></i></a>
+            <a href="#"><i class="fab fa-css3"></i></a>
+            <a href="#"><i class="fab fa-js-square"></i></a>
+            <a href="#"><i class="fab fa-react"></i></a>
           </div>
         </div>
       </div>
     </section>
 
     <!---------- Blog -------------->
-    <section class="blog container">
+    <section id="blog" class="container">
       <div class="section-heading-title">
         <h2>Latest Posts</h2>
       </div>
@@ -156,6 +156,25 @@
         </div>
       </div>
     </section>
+
+    <!---------- Footer -------------->
+    <footer id="footer">
+      <div class="footer-wrapper-icons">
+        <a
+          href="https://www.linkedin.com/in/boris-lazarevic-708454206/"
+          target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/borislazarevic" target="_blank"
+          ><i class="fab fa-github-square"></i
+        ></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram-square"></i></a>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2021. Made by Boris Lazarevic</p>
+      </div>
+    </footer>
 
     <script src="app.js"></script>
   </body>

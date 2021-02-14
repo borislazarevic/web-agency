@@ -4,7 +4,6 @@ Variables
 *******************/
 /* rgb(29, 82, 124) */
 /* rgb(69, 154, 211) */
-/* rgb(253, 127, 69) */
 /*******************
 Basic Styles
 *******************/
@@ -13,6 +12,7 @@ Basic Styles
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -337,6 +337,7 @@ header {
 
 .header-content-group span {
   font-style: italic;
+  color: #1d527c;
 }
 
 .header-content-paragraph {
@@ -397,11 +398,11 @@ header {
 /*******************
 About Us
 *******************/
-.about-us {
+#about-us {
   padding: 40px 0;
 }
 
-.about-us .section-heading-title h2 {
+#about-us .section-heading-title h2 {
   color: #1d527c;
 }
 
@@ -458,16 +459,16 @@ About Us
 /*******************
 Services
 *******************/
-.services {
+#services {
   background: #1d527c;
   padding: 40px 0;
 }
 
-.services .section-heading-title {
+#services .section-heading-title {
   color: #fff;
 }
 
-.services .section-heading-title::after {
+#services .section-heading-title::after {
   background: lightgray;
 }
 
@@ -523,8 +524,8 @@ Services
 .services-wrapper-icons i {
   font-size: 5rem;
   padding: 30px 20px;
-  -webkit-transition: 0.35s ease-in-out;
-  transition: 0.35s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @media screen and (min-width: 600px) {
@@ -555,11 +556,11 @@ Services
 /*******************
 Blog
 *******************/
-.blog {
+#blog {
   padding: 40px 0;
 }
 
-.blog .section-heading-title h2 {
+#blog .section-heading-title h2 {
   color: #1d527c;
 }
 
@@ -665,5 +666,75 @@ Blog
   border: 1px solid #1d527c;
   color: #1d527c;
   background: transparent;
+}
+
+/*******************
+Footer
+*******************/
+#footer {
+  height: 40vh;
+  padding: 40px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer-wrapper-icons i {
+  font-size: 1.7rem;
+  padding: 17px;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+  .footer-wrapper-icons i {
+    font-size: 2.3rem;
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper-icons i {
+    font-size: 2.7rem;
+    padding: 20px 45px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .footer-wrapper-icons i {
+    font-size: 3.2rem;
+    padding: 30px 60px;
+  }
+}
+
+.footer-wrapper-icons i:hover {
+  color: lightgray;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.copyright p {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .copyright p {
+    font-size: 0.9rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

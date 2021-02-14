@@ -10,7 +10,6 @@ Variables
 
 $darkblue: #1d527c; /* rgb(29, 82, 124) */
 $lightblue: #459ad3; /* rgb(69, 154, 211) */
-$orange: #fd7f45; /* rgb(253, 127, 69) */
 $darkgray: #3c3b3c;
 $lightgray: lightgray;
 $white: #fff;
@@ -25,6 +24,7 @@ Basic Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -244,6 +244,7 @@ header {
 
 .header-content-group span {
   font-style: italic;
+  color: $darkblue;
 }
 
 .header-content-paragraph {
@@ -277,11 +278,11 @@ header {
 /*******************
 About Us
 *******************/
-.about-us {
+#about-us {
   padding: $padding;
 }
 
-.about-us .section-heading-title h2 {
+#about-us .section-heading-title h2 {
   color: $darkblue;
 }
 
@@ -321,16 +322,16 @@ About Us
 /*******************
 Services
 *******************/
-.services {
+#services {
   background: $darkblue;
   padding: $padding;
 }
 
-.services .section-heading-title {
+#services .section-heading-title {
   color: $white;
 }
 
-.services .section-heading-title::after {
+#services .section-heading-title::after {
   background: $lightgray;
 }
 
@@ -365,7 +366,7 @@ Services
 .services-wrapper-icons i {
   font-size: 5rem;
   padding: 30px 20px;
-  transition: 0.35s ease-in-out;
+  transition: 0.5s ease-in-out;
   @include breakpoint(iPad) {
     font-size: 5.3rem;
   }
@@ -385,11 +386,11 @@ Services
 /*******************
 Blog
 *******************/
-.blog {
+#blog {
   padding: $padding;
 }
 
-.blog .section-heading-title h2 {
+#blog .section-heading-title h2 {
   color: $darkblue;
 }
 
@@ -452,5 +453,47 @@ Blog
     border: 1px solid $darkblue;
     color: $darkblue;
     background: transparent;
+  }
+}
+
+/*******************
+Footer
+*******************/
+#footer {
+  height: 40vh;
+  padding: $padding;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/header.jpg");
+  @include background_img;
+  @include flex_center;
+  flex-direction: column;
+}
+
+.footer-wrapper-icons i {
+  font-size: 1.7rem;
+  padding: 17px;
+  transition: 0.5s ease-in-out;
+  @include breakpoint(iPad) {
+    font-size: 2.3rem;
+    padding: 20px 30px;
+  }
+  @include breakpoint(tablet) {
+    font-size: 2.7rem;
+    padding: 20px 45px;
+  }
+  @include breakpoint(laptop) {
+    font-size: 3.2rem;
+    padding: 30px 60px;
+  }
+  &:hover {
+    color: $lightgray;
+    transform: rotate(360deg);
+  }
+}
+
+.copyright p {
+  font-size: 0.8rem;
+  @include breakpoint(tablet) {
+    font-size: 0.9rem;
   }
 }

@@ -4,7 +4,6 @@ Variables
 *******************/
 /* rgb(29, 82, 124) */
 /* rgb(69, 154, 211) */
-/* rgb(253, 127, 69) */
 /*******************
 Basic Styles
 *******************/
@@ -12,6 +11,7 @@ Basic Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -263,6 +263,7 @@ header {
 
 .header-content-group span {
   font-style: italic;
+  color: #1d527c;
 }
 
 .header-content-paragraph {
@@ -317,11 +318,11 @@ header {
 /*******************
 About Us
 *******************/
-.about-us {
+#about-us {
   padding: 40px 0;
 }
 
-.about-us .section-heading-title h2 {
+#about-us .section-heading-title h2 {
   color: #1d527c;
 }
 
@@ -367,16 +368,16 @@ About Us
 /*******************
 Services
 *******************/
-.services {
+#services {
   background: #1d527c;
   padding: 40px 0;
 }
 
-.services .section-heading-title {
+#services .section-heading-title {
   color: #fff;
 }
 
-.services .section-heading-title::after {
+#services .section-heading-title::after {
   background: lightgray;
 }
 
@@ -419,7 +420,7 @@ Services
 .services-wrapper-icons i {
   font-size: 5rem;
   padding: 30px 20px;
-  transition: 0.35s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 @media screen and (min-width: 600px) {
   .services-wrapper-icons i {
@@ -445,11 +446,11 @@ Services
 /*******************
 Blog
 *******************/
-.blog {
+#blog {
   padding: 40px 0;
 }
 
-.blog .section-heading-title h2 {
+#blog .section-heading-title h2 {
   color: #1d527c;
 }
 
@@ -540,6 +541,59 @@ Blog
   border: 1px solid #1d527c;
   color: #1d527c;
   background: transparent;
+}
+
+/*******************
+Footer
+*******************/
+#footer {
+  height: 40vh;
+  padding: 40px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-wrapper-icons i {
+  font-size: 1.7rem;
+  padding: 17px;
+  transition: 0.5s ease-in-out;
+}
+@media screen and (min-width: 600px) {
+  .footer-wrapper-icons i {
+    font-size: 2.3rem;
+    padding: 20px 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-wrapper-icons i {
+    font-size: 2.7rem;
+    padding: 20px 45px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .footer-wrapper-icons i {
+    font-size: 3.2rem;
+    padding: 30px 60px;
+  }
+}
+.footer-wrapper-icons i:hover {
+  color: lightgray;
+  transform: rotate(360deg);
+}
+
+.copyright p {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 768px) {
+  .copyright p {
+    font-size: 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
