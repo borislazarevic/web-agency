@@ -54,6 +54,11 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
@@ -229,11 +234,11 @@ header {
     font-size: 3rem;
   }
   @include breakpoint(laptop) {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 0.9;
   }
   @include breakpoint(desktop) {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 }
 
@@ -245,17 +250,16 @@ header {
   line-height: 1.4;
   padding: 15px;
   @include breakpoint(tablet) {
-    font-size: 1.1rem;
     text-align: center;
     padding: 30px 0;
   }
   @include breakpoint(laptop) {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     line-height: 1.4;
     padding: 50px 0;
   }
   @include breakpoint(desktop) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -263,10 +267,10 @@ header {
   padding-bottom: 20px;
 }
 
-.header-content-group button {
+.header-btn {
   @include btn;
   @include breakpoint(laptop) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -281,6 +285,14 @@ About Us
   color: $darkblue;
 }
 
+.about-us-wrapper {
+  @include breakpoint(tablet) {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
 .about-us-wrapper p {
   color: $darkgray;
   padding-bottom: 15px;
@@ -288,35 +300,21 @@ About Us
     flex: 1;
     padding-right: 40px;
     line-height: 1.4;
-    font-size: 1.1rem;
   }
   @include breakpoint(laptop) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 1.4;
     padding-right: 60px;
   }
   @include breakpoint(desktop) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding-right: 70px;
   }
-}
-
-.about-us-img img {
-  width: 100%;
-  height: auto;
 }
 
 .about-us-img {
   @include breakpoint(tablet) {
     flex: 1;
-  }
-}
-
-.about-us-wrapper {
-  @include breakpoint(tablet) {
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
   }
 }
 
@@ -340,13 +338,12 @@ Services
   padding-bottom: 15px;
   @include breakpoint(tablet) {
     line-height: 1.4;
-    font-size: 1.1rem;
   }
   @include breakpoint(laptop) {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   @include breakpoint(desktop) {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -370,17 +367,90 @@ Services
   padding: 30px 20px;
   transition: 0.35s ease-in-out;
   @include breakpoint(iPad) {
-    font-size: 5.8rem;
+    font-size: 5.3rem;
   }
   @include breakpoint(tablet) {
-    font-size: 6.5rem;
+    font-size: 6.1rem;
   }
   @include breakpoint(laptop) {
-    font-size: 8rem;
+    font-size: 7rem;
     padding: 60px 40px;
   }
   &:hover {
     color: $lightgray;
     transform: rotate(360deg);
+  }
+}
+
+/*******************
+Blog
+*******************/
+.blog {
+  padding: $padding;
+}
+
+.blog .section-heading-title h2 {
+  color: $darkblue;
+}
+
+.blog-wrapper {
+  @include breakpoint(laptop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.blog-wrapper-post {
+  padding: 15px 0;
+  flex-basis: 29%;
+}
+
+.blog-wrapper-post h4 {
+  font-size: 1.3rem;
+  color: $darkblue;
+  text-align: center;
+  padding-top: 15px;
+  @include breakpoint(tablet) {
+    font-size: 1.5rem;
+  }
+  @include breakpoint(laptop) {
+    font-size: 1.8rem;
+  }
+  @include breakpoint(desktop) {
+    font-size: 2.1rem;
+  }
+}
+
+.blog-wrapper-post p {
+  color: $darkgray;
+  padding: 20px 0;
+  @include breakpoint(tablet) {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    padding: 30px 0;
+  }
+  @include breakpoint(laptop) {
+    font-size: 1.1rem;
+  }
+  @include breakpoint(desktop) {
+    font-size: 1.2rem;
+  }
+}
+
+.blog-btn {
+  @include btn;
+  display: block;
+  margin: 0 auto;
+  border: 1px solid $lightgray;
+  color: $lightgray;
+  background: $darkblue;
+  @include breakpoint(tablet) {
+    font-size: 1.02rem;
+    font-weight: 400;
+  }
+  &:hover {
+    border: 1px solid $darkblue;
+    color: $darkblue;
+    background: transparent;
   }
 }
