@@ -85,6 +85,8 @@ img {
 Navigation
 *******************/
 nav {
+  position: fixed;
+  width: 100%;
   background: #1d527c;
   display: flex;
   justify-content: space-around;
@@ -98,7 +100,7 @@ nav {
 }
 
 .nav-links {
-  position: absolute;
+  position: fixed;
   right: 0px;
   height: 92vh;
   top: 8vh;
