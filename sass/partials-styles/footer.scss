@@ -1,0 +1,41 @@
+/*******************
+Footer
+*******************/
+#footer {
+  height: 40vh;
+  padding: $padding;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/header.jpg");
+  @include background_img;
+  @include flex_center;
+  flex-direction: column;
+}
+
+.footer-wrapper-icons i {
+  font-size: 1.7rem;
+  padding: 17px;
+  transition: 0.5s ease-in-out;
+  @include breakpoint(iPad) {
+    font-size: 2.3rem;
+    padding: 20px 30px;
+  }
+  @include breakpoint(tablet) {
+    font-size: 2.7rem;
+    padding: 20px 45px;
+  }
+  @include breakpoint(laptop) {
+    font-size: 3.2rem;
+    padding: 30px 60px;
+  }
+  &:hover {
+    color: $lightgray;
+    transform: rotate(360deg);
+  }
+}
+
+.copyright p {
+  font-size: 0.8rem;
+  @include breakpoint(tablet) {
+    font-size: 0.9rem;
+  }
+}

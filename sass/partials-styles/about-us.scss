@@ -1,0 +1,43 @@
+/*******************
+About Us
+*******************/
+#about-us {
+  padding: $padding;
+}
+
+#about-us .section-heading-title h2 {
+  color: $darkblue;
+}
+
+.about-us-wrapper {
+  @include breakpoint(tablet) {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.about-us-wrapper p {
+  color: $darkgray;
+  padding-bottom: 15px;
+  @include breakpoint(tablet) {
+    flex: 1;
+    padding-right: 40px;
+    line-height: 1.4;
+  }
+  @include breakpoint(laptop) {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    padding-right: 60px;
+  }
+  @include breakpoint(desktop) {
+    font-size: 1.3rem;
+    padding-right: 70px;
+  }
+}
+
+.about-us-img {
+  @include breakpoint(tablet) {
+    flex: 1;
+  }
+}

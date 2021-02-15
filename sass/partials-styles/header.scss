@@ -1,0 +1,76 @@
+// /*******************
+// Variables
+// *******************/
+// $darkblue: #1d527c; /* rgb(29, 82, 124) */
+// $lightblue: #459ad3; /* rgb(69, 154, 211) */
+// $darkgray: #3c3b3c;
+// $lightgray: lightgray;
+// $white: #fff;
+// $transition: 0.4s ease;
+// $padding: 40px 0;
+
+/*******************
+Header
+*******************/
+header {
+  height: 92vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/header.jpg");
+  @include background_img;
+  @include flex_center;
+}
+
+.header-content-group {
+  padding: 20px;
+  text-align: center;
+  @include breakpoint(iPad) {
+    max-width: 70%;
+  }
+}
+
+.header-content-group h1 {
+  line-height: 1.25;
+  @include breakpoint(tablet) {
+    font-size: 3rem;
+  }
+  @include breakpoint(laptop) {
+    font-size: 3.5rem;
+    line-height: 0.9;
+  }
+  @include breakpoint(desktop) {
+    font-size: 4.5rem;
+  }
+}
+
+.header-content-group span {
+  font-style: italic;
+  color: $darkblue;
+}
+
+.header-content-paragraph {
+  line-height: 1.4;
+  padding: 15px;
+  @include breakpoint(tablet) {
+    text-align: center;
+    padding: 30px 0;
+  }
+  @include breakpoint(laptop) {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    padding: 50px 0;
+  }
+  @include breakpoint(desktop) {
+    font-size: 1.2rem;
+  }
+}
+
+.header-content-paragraph :nth-child(1) {
+  padding-bottom: 20px;
+}
+
+.header-btn {
+  @include btn;
+  @include breakpoint(laptop) {
+    font-size: 1.2rem;
+  }
+}
