@@ -305,6 +305,7 @@ header {
   color: #1d527c;
   background: lightgray;
   transition: 0.4s ease;
+  outline: none;
   cursor: pointer;
 }
 .header-btn:hover {
@@ -522,6 +523,7 @@ Blog
   color: #1d527c;
   background: lightgray;
   transition: 0.4s ease;
+  outline: none;
   cursor: pointer;
   display: block;
   margin: 0 auto;

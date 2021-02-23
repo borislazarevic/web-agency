@@ -10,6 +10,7 @@
   color: $darkblue;
   background: $lightgray;
   transition: $transition;
+  outline: none;
   cursor: pointer;
   &:hover {
     color: $lightgray;
